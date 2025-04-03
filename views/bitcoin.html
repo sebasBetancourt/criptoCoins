@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitTribe</title>
+    <link rel="stylesheet" href="../css/bitcoin.css">
+    <script src="../js/bitcoin.js" defer type="module"></script>
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/stock.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+    <link rel="icon" href="../storage/img/logo.png">
+</head>
+<body>
+    <header>
+        
+        
+        <div class="div__title_direction">
+            <a href="#">Explore</a>
+        </div>
+        <form action="?" method="get" class="form_search">
+            
+            <input type="submit" id="myButton" value="">
+            <input type="text" name="search" placeholder="Search...">
+            
+        </form>
+
+
+        <div class="profile">
+            <a href="#"><img src="../storage/img/profile.png" alt=""></a>
+        </div>
+    </header>
+
+    <button class="menu-toggle" id="menuToggle">
+        <img src="../storage/img/hamburguer.svg" alt="Menu">
+    </button>
+    <nav>
+        <div class="div_title">
+            <a href="#"> <h1>BitTripe</h1></a>
+        </div>
+        <ul class="ul__nav">
+            <li><img src="../storage/img/home.svg" alt=""><a href="bitcoin.html">Home</a></li>
+            <li><img src="../storage/img/explore.svg" alt=""><a href="bitcoin.html">Explore</a></li>
+            <li><img src="../storage/img/library.svg" alt=""><a href="#">Library</a></li>
+            <li><img src="../storage/img/calculator.svg" alt=""><a href="#">Conversion</a></li>
+            <li id="logOut"><img src="../storage/img/logOut.svg" alt=""><a href="../index.html">Log Out</a></li>
+        </ul>
+    </nav>
+
+    <dialog class="dialogCripto" open="">
+        <div class="divTitleDialog">
+            <img src="../storage/img/bitcoin.svg">
+            <h3>BTC</h3>
+            <strong>Precio de Bitcoin</strong>
+        </div>
+        <div class="asideDialogCripto">
+            <div class="priceCoin">
+                <strong>COP$440,853,302</strong>
+                <br><code>+COP$6,093,140
+                    (+1.40 %)</code>
+            </div>
+            <select class="selectChangeCoin">
+                <option value="USD">USD</option>
+                <option value="COP">COP</option>
+            </select>
+        </div>
+        <div class="mainDialogCripto">
+            <div id="chartdiv"></div>
+            <div id="chartcontrols"></div>
+        </div>
+    </dialog>
+
+    <main id="main">
+        <div class="title__explore"><h3>All CriptoCoins</h3></div>
+        <div class="table__explore" id="table__explore">
+
+        </div>
+        
+
+    </main>
+
+</body>
+</html>

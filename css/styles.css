@@ -1,7 +1,440 @@
 @import url(variable.css);
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: var(--color-primary);
+    overflow-x: hidden;
+}
+
+/* -----------------------Animacion-------------------------------- */
+.dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: float 5s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        transform: translateY(-100vh) scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* -----------------------------Header-------------------------------- */
+
+header {
+    width: 100%;
+    height: 20%;
+    justify-items: center;
+}
+
+nav {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid rgb(97, 101, 109);
+}
+
+nav a{
+    color: var(--color-font-1);
+    font-size: 40px;
+    font-family: "LexendDeca-Regular";
+    text-shadow: 5px 5px var(--color-fourtheen);
+    text-decoration: none;
+}
+
+nav button {
+    cursor: pointer;
+    width: 120px;
+    height: 35px;
+    background: linear-gradient(45deg, #461c81, #642666);
+    border: none;
+    box-shadow: 0px 0px 20px rgba(21, 153, 194, 0.25);
+    border-radius: 8px;
+    color: var(--color-font-1);
+    font-family: "NotoSans-Regular";
+    font-weight: bolder;
+    
+}
+nav button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+/* -------------------------main----------------------- */
+main {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: center;
+}
+
+.div__img img{
+    width: 70%;
+    height: 70%;
+}
+.div__img img:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+.form__login {
+    background: var(--color-secondary);
+    width: 380px;
+    height: 60%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(21, 153, 194, 0.25);
+}
+
+.div__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 15px;
+}
+
+.div__title h1 {
+    font-family: 'NotoSans-ExtraBoldItalic';
+    font-size: 200%;
+    color: var(--color-font-1);
+}
+
+.div__title strong {
+    font-family: 'NotoSans-Regular';
+    font-size: 90%;
+    color: var(--color-font-1);
+}
+
+.div__input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.div__input div label {
+    font-family: 'NotoSans-Regular';
+    font-size: 70%;
+    font-weight: bold;
+    color: var(--color-font-1);
+}
+
+.div__input div input {
+    width: 80%;
+    height: 30px;
+    background: transparent;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-family: 'NotoSans-Regular';
+    color: white;
+    outline: none;
+    border: 1px solid #644eac;
+    border-radius: 12px;
+    background: #261046;
+}
+
+
+.div__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20PX;
+    gap: 15px;
+}
+
+.div__button input {
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(80, 23, 148, 1) 0%, rgba(62, 112, 161, 1) 100%);
+    width: 100px;
+    height: 27px;
+    border-radius: 10px;
+    border: none;
+    color: var(--color-font-1);
+    font-family: "NotoSans-Regular";
+    font-weight: bold;
+}
+.div__button input:hover {
+    background: #343ba3;
+}
+.div__button span{
+    font-family: 'NotoSans-Regular';
+    font-size: 13px;
+    color: var(--color-font-1);
+}
+
+.div__button a{
+    color: #2764aa;
+}
+.div__button a:active{
+    color: #1b4f8a;
+}
+
+
+
+
+
+
+/* ---------------------------Dialog signUp-------------------------------- */
+.dialog__signUp {
+    width: 440px;
+    height: 500px;
+    justify-self: center;
+    align-self: center;
+    border: none;
+    border-radius: 28px;
+    background: #614096;
+    box-shadow: -1px -1px 15px 13px rgba(218, 9, 183, 0.25);
+    justify-items: center;
+}
+.div__dialog_signUp {
+}
+.form__register {
+}
+.div__title_signUp {
+    display: flex;
+    justify-content: center;
+    margin: 12px;
+}
+.div__title_signUp h1{
+    width: 60%;
+    font-family: 'NotoSans-ExtraBoldItalic';
+    font-size: 200%;
+    color: var(--color-font-1);
+}
+
+
+.div__input_signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.div__input_signUp div label {
+    font-family: 'NotoSans-Regular';
+    font-size: 70%;
+    font-weight: bold;
+    color: var(--color-font-1);
+}
+.div__input_signUp div input {
+    width: 80%;
+    height: 30px;
+    background: transparent;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-family: 'NotoSans-Regular';
+    color: white;
+    outline: none;
+    border: 1px solid #644eac;
+    border-radius: 12px;
+    background: #261046;
+}
+.div__termsConditions{
+    color: white;
+    font-family: "NotoSans-Regular";
+    font-size: 14px;
+}
+.div__button_signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20PX;
+    gap: 15px;
+}
+.div__button_signUp input {
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(80, 23, 148, 1) 0%, rgba(62, 112, 161, 1) 100%);
+    width: 100px;
+    height: 27px;
+    border-radius: 10px;
+    border: none;
+    color: var(--color-font-1);
+    font-family: "NotoSans-Regular";
+    font-weight: bold;
+    margin-right: 12%;
+}
+input[name="termsConditions"] {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+}
+.div__button_signUp input:hover {
+    background: #343ba3;
+}
+.dialog__signUp_close {
+    display: flex;
+    cursor: pointer;
+    justify-self: end;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: #362452;
+    border: none;
+    border-radius: 6px;
+    color: white;
+}
+
+
+
+
+
+
+
+/* -------------------------Footer-------------------- */
+
+footer {
+    width: 100%;
+    height: 20%;
+    justify-items: center;
+}
+
+.div__social {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    border-top: 1.5px solid rgb(97, 101, 109);
+}
+.div__social a img{
+    width: 40px;
+    height: 40px;
+}
+
+/* ''''''''''''''''''''''Resposivo''''''''''''''''''''''''''''''''''''''''' */
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--color-primary);
+        height: 120vh;
+        padding: 20px 10px;
+        gap: 10%;
+    }
+
+    header, footer {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    nav button {
+        width: 100px;
+        height: 30px;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 20px 0;
+    }
+
+    .div__img {
+        display: none;
+    }
+
+    .form__login {
+        width: 90%;
+        height: 80%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+
+    .div__input div input {
+        width: 90%;
+    }
+
+    .div__button {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .div__button input {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .dialog__signUp {
+        width: 90%;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .div__input_signUp div input {
+        width: 90%;
+    }
+
+    .div__button_signUp {
+        align-items: center;
+    }
+
+    .div__button_signUp input {
+        width: 100%;
+        max-width: 200px;
+        margin-right: 0;
+    }
+
+    .div__social {
+        width: 100%;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .div__social a img {
+        width: 30px;
+        height: 30px;
+    }
+    footer{
+        align-self: end;
+    }
 }
