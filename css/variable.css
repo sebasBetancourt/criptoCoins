@@ -1,15 +1,33 @@
-:root{
-    --color-primary: #007bff;
-    --color-secondary: #6c757d;
-    --color-success: #28a745;
-    --color-danger: #dc3545;
-    --color-warning: #ffc107;
-    --color-info: #17a2b8;
-    --color-light: #f8f9fa;
-    --color-dark: #343a40;
+:root {
+    --color-primary: #160430;
+    --color-secondary: #3B2063;
+    --color-success: #122153;
+    --color-fourtheen: #393f8b;
+    --color-font-1: #FFFFFF;
+    --color-font-2: #000000;
 }
 
 @font-face {
     font-family: 'CustomFont';
     src: url(../storage/font/example.ttf);
+}
+
+@font-face {
+    font-family: 'notoSans-BoldItalic';
+    src: url(../storage/font/NotoSans-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'NotoSans-ExtraBoldItalic';
+    src: url(../storage/font/NotoSans-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'NotoSans-Regular';
+    src: url(../storage/font/NotoSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'LexendDeca-Regular';
+    src: url(../storage/font/LexendDeca-Regular.ttf);
 }
