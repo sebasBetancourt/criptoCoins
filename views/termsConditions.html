@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bitcoin Trading - Registro e Ingreso</title>
+    <!-- Enlazar con un archivo CSS para el estilo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Añadir un icono en la pestaña del navegador -->
+    <link rel="icon" href="favicon.ico">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="#terminos">Términos y Condiciones</a></li>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#ingreso">Ingreso</a></li>
+                <li><a href="#dashboard">Mi Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Términos y Condiciones -->
+    <section id="terminos">
+        <h2>Términos y Condiciones</h2>
+        <p>Bienvenido a nuestra plataforma de inversión en Bitcoin. Al utilizar nuestros servicios, aceptas los siguientes términos y condiciones:</p>
+        <ul>
+            <li><strong>1. Uso de la plataforma:</strong> Debes ser mayor de 18 años para registrarte y utilizar nuestros servicios.</li>
+            <li><strong>2. Seguridad:</strong> Nos comprometemos a proteger la información personal y financiera, pero debes mantener la confidencialidad de tu cuenta.</li>
+            <li><strong>3. Riesgos de inversión:</strong> El comercio de Bitcoin y otras criptomonedas es altamente volátil y conlleva riesgos. No garantizamos ganancias y no somos responsables de las pérdidas.</li>
+            <li><strong>4. Responsabilidad:</strong> Eres responsable de las transacciones realizadas a través de tu cuenta.</li>
+            <li><strong>5. Modificaciones:</strong> Nos reservamos el derecho de modificar estos términos en cualquier momento.</li>
+        </ul>
+        <p>Al continuar, aceptas estos términos y condiciones.</p>
+    </section>
+
+    <!-- Sección de Registro -->
+    <section id="registro">
+        <h2>Registro</h2>
+        <form action="/registrarse" method="POST">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required><br><br>
+
+            <label for="confirmar">Confirmar contraseña:</label>
+            <input type="password" id="confirmar" name="confirmar" required><br><br>
+
+            <button type="submit">Registrarse</button>
+        </form>
+    </section>
+
+    <!-- Sección de Ingreso -->
+    <section id="ingreso">
+        <h2>Ingreso</h2>
+        <form action="/ingresar" method="POST">
+            <label for="email_ingreso">Correo electrónico:</label>
+            <input type="email" id="email_ingreso" name="email_ingreso" required><br><br>
+
+            <label for="contraseña_ingreso">Contraseña:</label>
+            <input type="password" id="contraseña_ingreso" name="contraseña_ingreso" required><br><br>
+
+            <button type="submit">Ingresar</button>
+        </form>
+    </section>
+
+    <!-- Sección de Dashboard de la Cuenta de Usuario -->
+    <section id="dashboard">
+        <h2>Mi Cuenta</h2>
+        <p>Bienvenido, <span id="usuario_nombre">[Nombre del usuario]</span></p>
+        <p>Saldo en Bitcoin: <span id="saldo_bitcoin">0.00 BTC</span></p>
+        
+        <h3>Mercado de Bitcoin</h3>
+        <div id="bitcoin_market">
+            <!-- Aquí se mostrará el valor en tiempo real de Bitcoin -->
+            <p>Precio actual de 1 BTC: <span id="btc_precio">$0.00 USD</span></p>
+        </div>
+
+        <h3>Operaciones</h3>
+        <form id="invertir_form">
+            <label for="cantidad">Cantidad de BTC a invertir:</label>
+            <input type="number" id="cantidad" name="cantidad" required><br><br>
+
+            <button type="submit">Invertir</button>
+        </form>
+    </section>
+
+    <!-- Footer de la página -->
+    <footer>
+        <p>&copy; 2025 Bitcoin Trading - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
