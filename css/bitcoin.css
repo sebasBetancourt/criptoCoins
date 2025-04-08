@@ -1,0 +1,156 @@
+@import url(variable.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    /* background: linear-gradient(60deg, #181120 50%, #160430 100%); */
+    background: linear-gradient(90deg, #181120 0%, #160430 50%);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+        'nav header'
+        'nav main'
+        'nav main';
+    overflow-y: hidden;
+}
+
+
+/* --------------------------Header-------------------------------- */
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    width: 90%;
+    border-bottom: 1.5px solid rgb(97, 101, 109);
+}
+
+.div__title_direction{
+    margin-left: 5%;
+    margin-right: 55%;
+}
+.div__title_direction a{
+    color: var(--color-font-1);
+    font-size: 36px;
+    font-family: "NotoSans-BoldItalic";
+    text-decoration: none;
+}
+.form_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6%;
+    background: #2f1655;
+    border-radius: 34px;
+    width: 15%;
+    height: 28%;
+    padding: 5px;
+    gap: 2px;
+}
+#myButton {
+    width: 11%;
+    height: 90%;
+    border: none;
+    border-radius: 100%;
+    background-image: url('../storage/img/search.svg'); /* La ruta a tu imagen */
+    background-position: center; /* Para centrar la imagen */
+    background-size: contain;
+    cursor: pointer;
+  }
+.form_search input{
+    width: 82%;
+    height: 80%;
+    border-radius: 34px;
+    background: transparent;
+    color: var(--color-font-1);
+    border: none;
+    font-size: 80%;
+    font-family: "LexendDeca-Regular";
+    padding-left: 10px;
+    outline: none;
+}
+
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3%;
+    height: 28%;
+    border-radius: 100%;
+    background: #2f1655;
+}
+
+
+
+
+
+
+/* --------------------------------Navegation----------------------------------- */
+
+nav{
+    grid-area: nav;
+    background: red;
+    height: 100vh;
+    padding: 30px;
+    justify-items:legacy;
+}
+
+
+.div_title{
+    
+}
+.div_title a{
+    color: var(--color-font-1);
+    font-size: 200%;
+    font-family: "LexendDeca-Regular";
+    text-shadow: 5px 5px var(--color-fourtheen);
+    text-decoration: none;
+}
+
+
+/* ----------------------Main------------------------------ */
+
+
+main{
+    grid-area: main;
+}
+.title__explore{
+    font-family: "NotoSans-SemiCondensed-BlackItalic";
+    font-size: 150%;
+    color: #ddd;
+    justify-self: center;
+    margin: 30px;
+}
+
+
+.table__explore{
+    background: pink;
+    border-radius: 20px;
+    justify-self: center;
+    width: 90%;
+    height: 70vh;
+    margin: 20px;
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+.tabla_cripto { 
+    width: 100%;
+    color: white;
+    
+}
+th, td { 
+    padding: 10px; 
+    border: 1px solid #ddd; 
+}
+th { 
+    background-color: #222; 
+}

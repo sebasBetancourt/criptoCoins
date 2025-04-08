@@ -31,3 +31,7 @@
     font-family: 'LexendDeca-Regular';
     src: url(../storage/font/LexendDeca-Regular.ttf);
 }
+@font-face {
+    font-family: 'NotoSans-SemiCondensed-BlackItalic';
+    src: url(../storage/font/NotoSans_SemiCondensed-Black.ttf);
+}

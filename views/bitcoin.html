@@ -4,34 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/bitcoin.css">
+    <script src="../js/bitcoin.js" defer type="module"></script>
+
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">
-                <h1>BitTribe</h1>
-            </a>
-            <button>Sign Up</button>
-        </nav>
+        
+        
+        <div class="div__title_direction">
+            <a href="#">Explore</a>
+        </div>
+        <form action="?" method="get" class="form_search">
+            
+            <input type="submit" id="myButton" value="">
+            <input type="text" name="search" placeholder="Search...">
+            
+        </form>
+
+
+        <div class="profile">
+            <a href="#"><img src="../storage/img/profile.png" alt=""></a>
+        </div>
     </header>
-    <main>
+
+
+    <nav>
+        <div class="div_title">
+            <a href="#"> <h1>BitTripe</h1></a>
+        </div>
+        <ul class="ul__nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Conversion</a></li>
+            <li><a href="#">Log Out</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <div class="title__explore"><h3>All CriptoCoins</h3></div>
+        <div class="table__explore" id="table__explore">
+
+        </div>
 
     </main>
-    <footer>
-        <div class="div__social">
-            <a href="#">
-                <img src="../storage/img/instagram.svg">
-            </a>
-            <a href="#">
-                <img src="../storage/img/facebook.png">
-            </a>
-            <a href="#">
-                <img src="../storage/img/twitter.png">
-            </a>
-            <a href="#">
-                <img src="../storage/img/whatsapp.png">
-            </a>
-        </div>
-    </footer>
+
 </body>
 </html>
