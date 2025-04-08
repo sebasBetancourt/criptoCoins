@@ -6,27 +6,64 @@
     <title>BitTribe</title>
     <link rel="stylesheet" href="css/styles.css">
     <script type="module" defer src="js/main.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
     <link rel="icon" href="storage/img/logo.png">
 </head>
-<body>
+<body id="body">
     <header>
         <nav>
             <a href="index.html">
                 <h1>BitTribe</h1>
             </a>
-            <button>Sign Up</button>
+            <button id="dialog__signUp_open">Sign Up</button>
         </nav>
     </header>
-    <main>
-        <dialog id="dialog__login" class="dialog__login">
-            <div id="dialog__message" class="dialog__message"></div>
-            <button id="dialog__login_close">Cerrar</button>
+    <main id="main">
+        <dialog class="dialog__signUp" id="dialog__signUp">
+            <button class="dialog__signUp_close" id="close__dialog">X</button>
+            <div class="div__dialog_signUp">
+                <form class="form__register" id="form__register" method="get">
+                    <div class="div__title_signUp">
+                        <h1>BitTribe</h1>
+                    </div>
+                    <div class="div__input_signUp">
+                        <div>
+                            <label>Name<br></label>
+                            <input type="text" name="nameSignUp" required placeholder="Enter your name" >
+                        </div>
+                        <div>
+                            <label>Phone<br></label>
+                            <input type="text" name="lastNameSignUp" required placeholder="Enter your Phone" >
+                        </div>
+                        <div>
+                            <label>Email<br></label>
+                            <input type="email" name="emailSignUp" required placeholder="Enter your email" >
+                        </div>
+                        <div>
+                            <label>Password<br></label>
+                            <input type="password" name="passwordSignUp" required placeholder="Enter your password" >
+                        </div>
+                        <div>
+                            <label>Confirm Password<br></label>
+                            <input type="password" name="confirmPassword" required placeholder="Enter your Password" >
+                        </div>
+                    </div>
+                    <div class="div__termsConditions">
+                        <input type="checkbox" name="termsConditions" required >
+                        <label>Accept Terms and conditions <a target="_blank" href="views/termsConditions.html">Terms and conditions</a></label>
+                    </div>
+                    <div class="div__button_signUp" id="dialog__signUp_close">
+                        <input type="submit" value="SIGN UP">
+                    </div>
+                </form>
+                
+            </div>
         </dialog>
         
         <div class="div__img">
             <img src="storage/img/bitcoin.webp" alt="">
         </div>
-        <form class="form__register" id="form__login" action="?" method="get">
+        <form class="form__login" id="form__login" action="?" method="get">
             <div class="div__title">
                 <h1>BitTribe</h1>
                 <strong>Sign In</strong>
@@ -43,22 +80,22 @@
             </div>
             <div class="div__button">
                 <input type="submit" value="SIGN IN">
-                <span>Sign Up <a href="#"> Sign Up</a></span>
+                <span>Sign Up <a id="dialog__signUp_openTwo" href="#dialog"> Sign Up</a></span>
             </div>
         </form>
     </main>
     <footer>
         <div class="div__social">
-            <a href="#">
+            <a href="https://www.instagram.com/" target="_blank">
                 <img src="storage/img/instagram.svg">
             </a>
-            <a href="#">
+            <a href="https://www.facebook.com/" target="_blank">
                 <img src="storage/img/facebook.png">
             </a>
-            <a href="#">
+            <a href="https://x.com/?lang=es" target="_blank">
                 <img src="storage/img/twitter.png">
             </a>
-            <a href="#">
+            <a href="https://www.whatsapp.com/" target="_blank">
                 <img src="storage/img/whatsapp.png">
             </a>
         </div>

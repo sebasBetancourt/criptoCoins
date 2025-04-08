@@ -1,16 +1,19 @@
 [
     {
         "id": 1,
+        "name": "Mario",
         "email": "m@gmail.com",
         "password": "123"
     },
     {
         "id": 2,
+        "name": "Sebas Betancourt",
         "email": "s3basbetan@gmail.com",
         "password": "1234"
     },
     {
         "id": 3,
+        "name": "James Rodriguez",
         "email": "hola@gmail.com",
         "password": "12345"
     }
