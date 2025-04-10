@@ -2,6 +2,7 @@
     --color-primary: #160430;
     --color-secondary: #3B2063;
     --color-success: #122153;
+    --color-1: #;
     --color-fourtheen: #393f8b;
     --color-font-1: #FFFFFF;
     --color-font-2: #000000;
@@ -34,4 +35,13 @@
 @font-face {
     font-family: 'NotoSans-SemiCondensed-BlackItalic';
     src: url(../storage/font/NotoSans_SemiCondensed-Black.ttf);
+}
+
+@font-face {
+    font-family: 'NotoSans-Medium';
+    src: url(../storage/font/NotoSans-Medium.ttf);
+}
+@font-face {
+    font-family: "NotoSans-ExtraBold";
+    src: url(../storage/font/NotoSans-ExtraBold.ttf);
 }

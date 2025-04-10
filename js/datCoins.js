@@ -25,9 +25,9 @@ export const datCoins = ()=> {
 
                 return {
                     nombre,
-                    precio: `COP$${Number(precioCOP).toLocaleString()}`,
+                    precio: `${Number(precioCOP).toLocaleString()}  COP$`,
                     cambio: `${cambio}%`,
-                    marketCap: `COP$${Number(marketCapCOP).toLocaleString()}`
+                    marketCap: `${Number(marketCapCOP).toLocaleString()}  COP$`
                 };
             });
 
@@ -55,7 +55,7 @@ export const datCoins = ()=> {
             fila.innerHTML = `
                 <td>${cripto.nombre}</td>
                 <td>${cripto.precio}</td>
-                <td style="color:${parseFloat(cripto.cambio) >= 0 ? 'green' : 'red'}">${cripto.cambio}</td>
+                <td style="color:${parseFloat(cripto.cambio) >= 0 ? '#31df31' : '#df0707'}">${cripto.cambio}</td>
                 <td>${cripto.marketCap}</td>
             `;
             tabla.appendChild(fila);
