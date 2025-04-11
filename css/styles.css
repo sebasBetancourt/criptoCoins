@@ -325,3 +325,117 @@ footer {
     width: 40px;
     height: 40px;
 }
+
+/* ''''''''''''''''''''''Resposivo''''''''''''''''''''''''''''''''''''''''' */
+
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: var(--color-primary);
+        height: 120vh;
+        padding: 20px 10px;
+        gap: 10%;
+    }
+
+    header, footer {
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    nav button {
+        width: 100px;
+        height: 30px;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px; /* 👈 Añade separación entre elementos */
+        padding: 20px 0;
+    }
+
+    /* 🔴 Oculta la imagen en móvil */
+    .div__img {
+        display: none;
+    }
+
+    .form__login {
+        width: 90%;
+        height: 80%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+
+    .div__input div input {
+        width: 90%;
+    }
+
+    .div__button {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .div__button input {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .dialog__signUp {
+        width: 90%;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .div__input_signUp div input {
+        width: 90%;
+    }
+
+    .div__button_signUp {
+        align-items: center;
+    }
+
+    .div__button_signUp input {
+        width: 100%;
+        max-width: 200px;
+        margin-right: 0;
+    }
+
+    .div__social {
+        width: 100%;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .div__social a img {
+        width: 30px;
+        height: 30px;
+    }
+    footer{
+        align-self: end;
+    }
+}
