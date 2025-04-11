@@ -2,18 +2,21 @@
     {
         "id": 1,
         "name": "Mario",
+        "phone": "23048230",
         "email": "m@gmail.com",
         "password": "123"
     },
     {
         "id": 2,
-        "name": "Sebas Betancourt",
+        "name": "Sebas",
+        "phone": "9043824",
         "email": "s3basbetan@gmail.com",
         "password": "1234"
     },
     {
         "id": 3,
-        "name": "James Rodriguez",
+        "name": "James",
+        "phone": "487289374",
         "email": "hola@gmail.com",
         "password": "12345"
     }

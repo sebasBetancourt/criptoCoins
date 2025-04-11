@@ -1,5 +1,4 @@
 import { points } from "./animation.js";
-import { bseDatos } from "./bseDatos.js";
 import {findDataByForm} from "./formSignIn.js";
 import { dialogRegister } from "./dialogRegister.js";
 

@@ -57,6 +57,8 @@ export const datCoins = ()=> {
                 <td>${cripto.precio}</td>
                 <td style="color:${parseFloat(cripto.cambio) >= 0 ? '#31df31' : '#df0707'}">${cripto.cambio}</td>
                 <td>${cripto.marketCap}</td>
+                <td><img id="save" src="../storage/img/library.svg"></td>
+                <td id="inversion"><img src="../storage/img/inversion.svg"></td>
             `;
             tabla.appendChild(fila);
         });

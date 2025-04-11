@@ -175,6 +175,7 @@ main{
     margin: 20px;
     padding: 30px;
     overflow-y: scroll;
+    overflow-x: hidden;
     border: 1px solid black;
 }
 
@@ -197,4 +198,35 @@ main{
     font-family: "NotoSans-Regular";
     font-weight: bold;
     border-bottom: 1px solid rgb(97, 101, 109);
+}
+.tr__cripto__info td:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.tr__cripto__info:hover{
+    transform: scale(0.9);
+    transition: all 0.2s ease-in-out;
+}
+.table__explore p{
+    color: white;
+    font-family: "NotoSans-Medium";
+    font-size: 105%;
+}
+
+
+/* ----------------------BARRA DE DESPLAZAMIENTO ------------------------------*/
+::-webkit-scrollbar {
+    width: 16px; 
+    height: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
